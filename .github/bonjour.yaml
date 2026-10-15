@@ -1,0 +1,14 @@
+name: Example Bonjour
+run-name: Example Bonjour
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  dire-bonjour:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: afficher bonjour
+        run: echo "bonjour depuis git"
