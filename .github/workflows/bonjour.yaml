@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: get all files
+      - uses: actions/checkout@v7
+
       - name: afficher bonjour
         run: echo "Bonjour depuis git8"
-
-      - name: get all files
-        uses: actions/checkout@v4
 
       - name: List all files
         run: ls
