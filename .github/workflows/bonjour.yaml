@@ -1,9 +1,7 @@
-name: Example Bonjour
-run-name: Example Bonjour
+name: Example bonour
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   dire-bonjour:
@@ -11,4 +9,11 @@ jobs:
 
     steps:
       - name: afficher bonjour
-        run: echo "bonjour depuis git"
+        run: echo "Bonjour depuis git"
+
+      - name: get all files
+        uses: actions/checkout@v4
+
+      - name: List all files
+        run: find . - type f
+
