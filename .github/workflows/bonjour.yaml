@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: afficher bonjour
-        run: echo "Bonjour depuis git"
+        run: echo "Bonjour depuis git8"
 
       - name: get all files
         uses: actions/checkout@v4
