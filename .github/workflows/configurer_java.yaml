@@ -1,0 +1,9 @@
+name: Configurer java
+
+on:
+  workflow_dispatch:
+
+jobs:
+  affichage:
+  runs-on: ubuntu-latest
+  steps:
