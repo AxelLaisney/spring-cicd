@@ -1,0 +1,19 @@
+name: Example bonour
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dire-bonjour:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: get all files
+        run: actions/checkout@v7
+
+      - name: afficher bonjour
+        run: echo "Bonjour depuis git8"
+
+      - name: List all files
+        run: ls
+
