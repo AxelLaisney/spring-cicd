@@ -11,6 +11,9 @@ jobs:
     - name: Get source code
       uses: actions/checkout@v7
 
+    - name: read files
+      run: ls
+
     - name: Config jdk 21
       uses: actions/setup-java@v5
       with:
